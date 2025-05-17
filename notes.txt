@@ -1,0 +1,3 @@
+For errors pip installing mysql refer to this link
+
+https://stackoverflow.com/questions/42357853/mysql-python-pip-install-error
