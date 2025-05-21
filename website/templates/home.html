@@ -5,6 +5,20 @@
 <div class="col-md-6 offset-md-3"> <!-- bootstrap code -->
     {% if user.is_authenticated %}
         <h1>Welcome {{user}}</h1>
+        {% if records %}
+            {% for record in records %}
+                {{ record.created_at }}
+                {{ record.first_name }}
+                {{ record.last_name }}
+                {{ record.email }}
+                {{ record.phone }}
+                {{ record.address }}
+                {{ record.city }}
+                {{ record.state }}
+                {{ record.zipcode }}
+                <br/> 
+            {% endfor %}
+        {% endif %}
     {% else %}
         <h1>Login</h1>
         <br/>
